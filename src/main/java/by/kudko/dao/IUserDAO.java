@@ -4,6 +4,6 @@ import by.kudko.model.User;
 
 import java.util.List;
 
-public interface UserDAO  extends CrudDAO<User>{
+public interface IUserDAO extends ICrudDAO<User> {
     List<User> findAllByName(String name);
 }
